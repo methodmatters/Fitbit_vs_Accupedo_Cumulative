@@ -44,9 +44,6 @@ max(merged_data$date)
 ##### Correspondence Plot
 
 # plot hourly steps against one another
-# regression lines show that
-# Accupedo over-counts
-# this over-counting is less strong on weekends
 ggplot(data = merged_data, aes(x = cumulative_daily_steps_apedo, 
                                y = cumulative_daily_steps_fbit, color = week_weekend)) + 
   geom_point(alpha = .5) + 
@@ -99,10 +96,10 @@ t.test(merged_data$cumul_diff_apedo_fbit, mu=0,
 
 
 
-#### Differences in Hourly Step Counts Across the Day
-#### Differences in Hourly Step Counts Across the Day
-#### Differences in Hourly Step Counts Across the Day
-#### Differences in Hourly Step Counts Across the Day
+#### Differences in Cumulative Step Counts Across the Day
+#### Differences in Cumulative Step Counts Across the Day
+#### Differences in Cumulative Step Counts Across the Day
+#### Differences in Cumulative Step Counts Across the Day
 
 # plot distributions for each hour
 # separate week/weekend with facet
