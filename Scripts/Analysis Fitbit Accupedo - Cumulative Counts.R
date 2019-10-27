@@ -119,3 +119,15 @@ ggplot(data = merged_data, aes(x = cumul_diff_apedo_fbit,
   scale_fill_manual(values=c("black", "red"))  +
   labs(fill='Week/Weekend') 
 
+
+#### Differences in Cumulative Step Count Differences - by Weekday vs. Weekend
+#### Differences in Cumulative Step Count Differences - by Weekday vs. Weekend
+#### Differences in Cumulative Step Count Differences - by Weekday vs. Weekend
+#### Differences in Cumulative Step Count Differences - by Weekday vs. Weekend
+
+lm1 <- lm(cumul_diff_apedo_fbit ~ week_weekend, data = merged_data)
+summary(lm1)
+
+# estimated difference for weekends 
+# (from regression model)
+447.885 + -263.907
